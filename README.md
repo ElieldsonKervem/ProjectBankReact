@@ -1,50 +1,79 @@
-# React + TypeScript + Vite
+#ReactBank
+ReactBank é uma aplicação web de gerenciamento de transações financeiras, desenvolvida com React e TypeScript, que permite aos usuários simular operações bancárias, como depósitos e retiradas. O projeto foi criado para praticar tecnologias modernas do ecossistema front-end, incluindo Vite, MirageJS, styled-components, Axios, e mais.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funcionalidades
+Cadastro de Transações: Registre transações financeiras com informações sobre título, valor, categoria e tipo (entrada ou saída).
+Visualização de Transações: Veja todas as transações cadastradas em uma tabela dinâmica.
+Modal Interativo: Adição de novas transações através de um modal simples e intuitivo.
+Simulação de API com MirageJS: As transações são armazenadas e manipuladas usando uma API mockada com MirageJS.
+Tecnologias Utilizadas
+React: Biblioteca para construção de interfaces de usuário.
+TypeScript: Superconjunto de JavaScript que adiciona tipagem estática.
+Vite: Ferramenta de build e servidor de desenvolvimento rápido.
+MirageJS: Simulador de API para testes e desenvolvimento sem backend real.
+Axios: Biblioteca para realizar requisições HTTP.
+Styled-components: Estilização de componentes com CSS-in-JS.
+React Modal: Criação de modais acessíveis no React.
+SASS: Pré-processador CSS para escrever estilos mais eficientes.
+ESLint: Ferramenta de linting para garantir a qualidade do código.
+Como Rodar o Projeto
+Pré-requisitos
+Node.js (versão 14 ou superior)
+npm ou yarn
+Passo a Passo
+Clone o repositório:
 
-Currently, two official plugins are available:
+bash
+Copiar código
+git clone https://github.com/seu-usuario/reactbank.git
+Entre no diretório do projeto:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copiar código
+cd reactbank
+Instale as dependências:
 
-## Expanding the ESLint configuration
+bash
+Copiar código
+npm install
+ou, se você estiver usando yarn:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copiar código
+yarn install
+Inicie o servidor de desenvolvimento:
 
-- Configure the top-level `parserOptions` property like this:
+bash
+Copiar código
+npm run dev
+ou com yarn:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+bash
+Copiar código
+yarn dev
+Abra o navegador e acesse:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+arduino
+Copiar código
+http://localhost:5173
+Scripts Disponíveis
+npm run dev: Inicia o servidor de desenvolvimento.
+npm run build: Compila a aplicação para produção.
+npm run lint: Verifica o código usando ESLint.
+npm run preview: Executa uma pré-visualização do build.
+Estrutura do Projeto
+bash
+Copiar código
+src/
+├── assets/            # Imagens e arquivos estáticos
+├── components/        # Componentes reutilizáveis da aplicação
+├── services/          # Configuração do Axios para chamadas HTTP
+├── styles/            # Estilos globais e arquivos SASS
+├── App.tsx            # Componente raiz da aplicação
+├── main.tsx           # Ponto de entrada da aplicação
+└── mock/              # Configuração do MirageJS para simulação de API
+Contribuindo
+Se você deseja contribuir para este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request. Qualquer sugestão ou melhoria é bem-vinda!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Licença
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
