@@ -77,3 +77,13 @@ Se você deseja contribuir para este projeto, sinta-se à vontade para abrir uma
 
 Licença
 Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+
+https://github.com/user-attachments/assets/40635e3a-7639-4ef3-9ac1-f704a950de42
+
+
+Uploading Vite + React + TS - Google Chrome 2024-10-12 08-01-27.mp4…
+![DALL·E 2024-10-12 08 06 36 - A diagram summarizing technologies and tools used in a React project called 'reactbank ' The diagram has a central node labeled 'Reactbank Project,' w](https://github.com/user-attachments/assets/113571fa-34c7-4e1d-b142-e0e7b17c06e7)
+
+
+
