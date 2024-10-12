@@ -1,7 +1,7 @@
-#ReactBank
+# ReactBank
 ReactBank é uma aplicação web de gerenciamento de transações financeiras, desenvolvida com React e TypeScript, que permite aos usuários simular operações bancárias, como depósitos e retiradas. O projeto foi criado para praticar tecnologias modernas do ecossistema front-end, incluindo Vite, MirageJS, styled-components, Axios, e mais.
 
-Funcionalidades
+## Funcionalidades
 Cadastro de Transações: Registre transações financeiras com informações sobre título, valor, categoria e tipo (entrada ou saída).
 Visualização de Transações: Veja todas as transações cadastradas em uma tabela dinâmica.
 Modal Interativo: Adição de novas transações através de um modal simples e intuitivo.
