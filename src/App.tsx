@@ -1,25 +1,39 @@
 
-import styled from 'styled-components'
 
-const Tittle = styled.h1 `
-  
- font-size: 3rem;
-  color: #333;
-  
-`
 
+import { DashBoard } from "./components/DashBoard";
+import Header from "./components/Header";
+import  GlobalStyle  from "./styles/global";
+import Transections from "./components/Transections";
+import Modal from 'react-modal';
+import { useState } from "react";
+
+import NewTrasactionModal from "./components/newTransactionModal";
+import { TransactionsProvider } from "./TramsactionsContext";
+
+Modal.setAppElement('#root');
 
 function App() {
+  
+  const [isNewTransactionModalOpen,setNewTransactionModalOpen] = useState(false);
 
+  function handleOpenNewTransactionModal(){
+    setNewTransactionModalOpen(true);
+  }
 
+  function handleCloseNewTransactionModal(){
+    setNewTransactionModalOpen(false);
+  }
   return (
-    <>
-      <div className='App'>
-        <Tittle>
-          React Bank
-        </Tittle>
-      </div>
-    </>
+    <TransactionsProvider>
+         <Header  onOpenNewTransactionModal={handleOpenNewTransactionModal}/>
+         <DashBoard />
+          <Transections />
+
+          <NewTrasactionModal isOpen={isNewTransactionModalOpen}  onRequestClose={handleCloseNewTransactionModal}/>
+         <GlobalStyle />
+
+    </TransactionsProvider>
   )
 }
 
